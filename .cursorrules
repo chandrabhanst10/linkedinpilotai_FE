@@ -1,0 +1,70 @@
+# Project Rules
+
+Always make production-ready changes.
+
+## Code Quality
+
+* Use TypeScript everywhere.
+* No `any`, `@ts-ignore`, or unsafe type assertions.
+* Strong typing for APIs, Redux, React props, hooks, services, and database models.
+* Follow SOLID, DRY, KISS principles.
+* Remove dead, duplicate, and unused code.
+
+## Architecture
+
+* Keep clean folder structure.
+* Create dedicated `types.ts` per module.
+* Separate UI, business logic, API, and state management.
+* Use reusable components and utilities.
+
+## Security
+
+* Validate all inputs.
+* Sanitize user-generated content.
+* Prevent XSS, CSRF, injection, and auth bypass issues.
+* Never expose secrets, tokens, or credentials.
+* Use least-privilege access.
+
+## React
+
+* Optimize renders and state updates.
+* Use memoization only when beneficial.
+* Fix dependency array issues.
+* Avoid unnecessary re-renders.
+
+## Redux
+
+* Use Redux Toolkit patterns.
+* Strongly type state, actions, selectors, and thunks.
+* No untyped dispatch or selectors.
+
+## API
+
+* Proper error handling.
+* Request validation.
+* Consistent response structure.
+* Loading, retry, and failure states.
+
+## Testing & QA
+
+* Act as a senior QA engineer.
+* Review all affected flows after every change.
+* Check edge cases, race conditions, and error scenarios.
+* Fix discovered issues automatically.
+
+## Performance
+
+* Optimize bundle size.
+* Remove unnecessary dependencies.
+* Optimize queries, loops, and renders.
+* Prevent memory leaks.
+
+## Deliverables
+
+For every task:
+
+1. Implement the change.
+2. Fix related TypeScript, ESLint, runtime, and build errors.
+3. Fix security and performance issues in touched files.
+4. Report all changes made.
+5. Do not ask for confirmation unless requirements are ambiguous.

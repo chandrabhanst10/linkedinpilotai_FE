@@ -1,0 +1,50 @@
+/* LinkPilot AI Base Reset CSS */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* FullCalendar Custom Glassmorphic Theme Overrides */
+.fc {
+  font-family: inherit !important;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: 1px solid var(--mui-palette-divider, #1f2937) !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.fc .fc-daygrid-day-number {
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none !important;
+  color: inherit !important;
+  padding: 8px !important;
+}
+
+.fc-event {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  border: none !important;
+}
